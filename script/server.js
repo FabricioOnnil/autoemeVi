@@ -11,7 +11,7 @@ import fs from 'fs/promises';
 import abastecimentoModelo from '../models/abastecimentoData.js';
 import agenda from '../models/agendaData.js';
 import agendamento from '../models/agendamentoData.js';
-import carroAbastecimento from '../models/carroAbastecimentoData.js';
+//import carroAbastecimento from '../models/carroAbastecimentoData.js';
 import carro from '../models/carroData.js';
 import contratoCarro from '../models/contratoCarroData.js';
 import custosCarro from '../models/custosCarroData.js';
@@ -19,14 +19,14 @@ import comida from '../models/refeicaoData.js';
 import diario from '../models/diarioData.js';
 import reparo from '../models/reparoData.js';
 import usuario from '../models/usuarioData.js';
-import usuarioVisita from '../models/usuarioVisitaData.js';
+//import usuarioVisita from '../models/usuarioVisitaData.js';
 import entrega from '../models/entregaData.js';
 
 // Importações de Rotas
 import userRouter from '../routes/acessoRoutes.js';
 import agendamentoRouter from '../routes/agendamentoRoutes.js';
 import agendaRouter from '../routes/agendaRoutes.js';
-import carroAbastecimentoRouter from '../routes/abastecimentoRoutes.js';
+//import carroAbastecimentoRouter from '../routes/abastecimentoRoutes.js';
 import entregaRouter from '../routes/entregaRoutes.js';
 import carRouter from '../routes/carroRoutes.js';
 import carContract from '../routes/contratoRoutes.js';
@@ -34,7 +34,7 @@ import carCosts from '../routes/custosRouter.js';
 import diarioRouter from '../routes/diarioRoutes.js';
 import comidaRouter from '../routes/refeicaoRoutes.js';
 import reparoRouter from '../routes/reparoRoutes.js';
-import usuarioVisitaRouter from '../routes/usuarioVisitaRoutes.js';
+//import usuarioVisitaRouter from '../routes/usuarioVisitaRoutes.js';
 import relatorioRouter from '../routes/relatorioRoutes.js';
 import abastecimentoRouter from '../routes/abastecimentoRoutes.js';
 

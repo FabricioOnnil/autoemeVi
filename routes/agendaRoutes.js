@@ -35,7 +35,7 @@ agendaRouter.get('/', async (req, res) => {
   agendaRouter.post('/', async (req, res) => {
     try {
 
-        const novoAgendamento = await agenda.create({ i_agenda_usuario_user: uuidv4(), ...req.body});
+        const novoAgendamento = await agenda.create(req.body);
 
         res.status(201).json({
             message: 'Agendamento criado com sucesso!',

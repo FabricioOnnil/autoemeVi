@@ -85,7 +85,7 @@ const agenda = db.sequelize.define('agenda', {
   },
 }, {
     tableName: 'agenda',
-    timestamps: false, // This is true by default and manages `createdAt` and `updatedAt` automatically
+    timestamps: true, // This is true by default and manages `createdAt` and `updatedAt` automatically
 });
 
 export default agenda;
