@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELATÓRIO DE COMPRA</title>
+    <link rel="stylesheet" href="/estilos/visual.css">
+    <link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon">
+    <style>
+        table {
+            display: none; /* Esconde as tabelas na página */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="header">
+            <a href="dashboard.html"><img src="/Imagens/logonew725.png" alt="Logo Vamo"></a>
+        </section>
+        <h1>Relatório</h1><br>
+        
+        <!-- Tabela de Refeições (comida) -->
+        <section>
+            <h2></h2>
+            <button onclick="openTablePopup('table-refeicoes')">Tabela de Refeições</button>
+            <table id="table-refeicoes">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Nota Fiscal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos dinamicamente via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+        <section>
+            <h2></h2>
+            <button onclick="openTablePopup('table-reparos')">Tabela de Reparos</button>
+            <table id="table-reparos">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Nota Fiscal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos dinamicamente via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+         <!-- Tabela de Abastecimentos -->
+         <section>
+            <h2></h2>
+            <button onclick="openTablePopup('table-abastecimento')">Tabela de Abastecimentos</button>
+            <table id="table-abastecimento">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Data</th>
+                        <th>Nota Fiscal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Dados serão inseridos dinamicamente via JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        <a href="/frontend/vamoEntrega.html"><button class="backButton">Voltar</button></a><br>
+        <footer>
+            <a href="https://mvgi.com.br/" target="_blank">
+                <img src="/Imagens/mvtranslucido2.png" alt="Logo MV Gestão Integrada">
+            </a>
+        </footer>
+    </main>
+
+    <script src="/scripts/relatorio.js"></script>
+</body>
+</html>

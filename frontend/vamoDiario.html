@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DIÁRIO</title>
+<link rel="stylesheet" href="/estilos/visual.css">
+<link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon"> 
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img class="logoHeader" src="/Imagens/logonew725.png" alt="Logo Vamo"></a></section><br>
+        <h1>Diário</h1><br><a href="/frontend/vamoDashboard.html"><button class="backButton">Voltar</button></a><br>  
+        <div id="check" class="checking" style="display: flex; gap: 20px;">
+            <input type="checkbox" name="crucial" id="crucial"> Crucial
+            <input type="checkbox" name="important" id="important">Importante
+            <input type="checkbox" name="observe" id="observe">Observar
+            <input type="checkbox" name="casual" id="casual">Casual
+        </div>
+        <div id="textForm">
+            <form id="longTextForm">
+                <!--<label for="longText">Descrição:</label><br>-->
+                <textarea id="longText" name="longText" rows="10" cols="50" required></textarea><br><br>
+                <button type="submit"><img src="vamoDiario.html" alt=""></button>
+            </form>
+        </div>
+        
+<script src="/script/diario.js"></script>
+</body>
+</html>

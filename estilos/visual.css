@@ -1,0 +1,1480 @@
+
+/*Fonte Ubuntu -------*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Fonte Rubik */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Fonte Mukta_Vaani */
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*div {
+        display: flex;
+        flex-direction: column;  Direção das sections - vertical por padrão 
+        justify-content: space-around; Espaçamento uniforme entre as sections 
+    }    
+    Aplica um tamanho máximo às imagens dentro da div 
+    div img {
+        max-width: 100%;  Imagens não podem ser maiores que a largura da div 
+        height: auto;  Mantém a proporção original da imagem 
+    }
+    @media screen and (max-width: 768px) {
+    div {
+        flex-direction: row; Altera para uma direção horizontal em telas menores 
+        justify-content: space-evenly;  Espaçamento uniforme horizontal 
+    }
+    }*/
+
+
+:root {
+    --font-ubuntu: 'ubuntu', sans-serif;
+    --font-rubik: 'rubik', sans-serif;
+    --font-Mukta: 'Mukta_vaani', sans-serif;
+    --varGreen: #276e06f8;
+    --varGreen2:rgb(80, 102, 3)0;
+    --varGreenshodow: #78990075;
+    --varWhite: #FFFFFF;
+    --varWhite2: #f5eeeed3;
+    --varYellow: #FFC72C;
+    --varBlue: #307FE2;
+    --varBackgroundImage: url(/Imagens/Imagens_apoio/Imagens_apoio/testefundo/floresta.png);
+    --varBoxshadowClassic: 0 8px 16px rgba(0, 128, 0, 0.5);
+    --varBackgroundClassic: linear-gradient(#78990025, #ffc72c27, #3080e22c);
+    --varBackgroundInternal: #3080e291;
+    --varBoxshadowForm:  0 4px 8px #3c4d02e8;
+    --varBackgroundForm:  #fffffff1;
+}
+
+/*--- A --*/
+
+
+.animation {
+    align-items: center;
+    
+}
+
+
+/*--- B --*/
+
+.backButton {
+    width: 100%; /* Largura da segunda section */
+    font-size: 20px;
+    justify-content: space-around; /* Espaçamento uniforme entre os botões */
+    align-items: flex-end;
+    padding: 10px; /* Espaçamento interno */
+}
+
+
+#bot_links {
+    align-items: center;
+    display: flex;
+    flex-direction: column; /* Coluna para alinhar as imagens verticalmente */
+    justify-content: center;
+    gap: 100px; /* Espaçamento entre os botões */
+    margin: 20 20px auto; /* Centraliza o contêiner horizontalmente */
+}
+
+#bot_links a {
+    display: inline-block; /* Garante que o link envolva apenas o conteúdo (imagem) */
+}
+
+#bot_links img {
+    display: block; /* Remove qualquer espaço em branco ao redor da imagem */
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#bot_links {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+#bot_links a {
+    display: inline-block;
+}
+
+#bot_links img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#botoes button {
+    background: none;
+    font-family: var(--font-ubuntu);
+    border: none;
+    padding-top: 200px;    
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Define uma altura para os botões */
+    margin-bottom: 0px; /* Adicionar margem inferior para espaçamento entre os botões */
+}
+
+.box {
+    background-color: #195303;
+    border: 1px solid #02721a;
+    border-radius: 8px;
+    padding: 0.5px;
+    box-shadow: 0 2px 5 px rgba(0,0,0,0.1);
+}
+
+button {    
+    align-items: center;
+    background-color: #13631600; 
+    border: none; 
+    font-weight: bold;
+    cursor: pointer; 
+    color: var(--varWhite); 
+    display: inline-block; 
+    font-family: var(--font-ubuntu);
+    font-size: 30px;    
+    margin: 0; 
+    padding: 18px;
+    padding-left: 90px; 
+    transition: background-color 0.3s;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.021);
+    font-weight: bolder;
+    color: var(--varBlue);
+}
+/*Trocar nome*/
+#button_define {
+    width: 80%; /* Largura da primeira section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espaçamento interno */
+    background: none;
+    border: none;
+    margin-bottom: 1px;
+    cursor: pointer;
+    gap: 10px;
+    
+}
+ .button_define {
+    width: 80%; /* Largura da segunda section */
+    display: flex;
+    justify-content: space-around; /* Espaçamento uniforme entre os botões */
+    align-items: center;
+    padding: 10px; /* Espaçamento interno */
+    
+ }
+ .button_define button,
+.button_define a {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#button_define,
+#relator {
+    justify-content: center;
+    font-size: 2px;
+    align-items: center;
+    width: 100%; 
+    padding: 0;
+    box-sizing: border-box;
+    margin: auto;    
+}
+
+/*--- C --*/
+
+.centerLogo{
+        display: flex; /* Usar Flexbox para centralização */
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
+        height: 100vh; /* Faz a seção ocupar a altura total da tela */
+        width: 100vw;
+}
+
+#calendar {
+    font-family: var(--font-ubuntu);
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 1000px;
+    background-color: var(--varBlue);
+    border: 3px solid var(--varGreen); /* Mais destacada */
+    box-shadow: 0 4px 8px var(--varBoxshadowForm);
+    color: var(--varWhite)
+}
+
+#calendar th, #calendar td {
+    font-family: var(--font-ubuntu);
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #FFFFFF;
+    white-space: nowrap;    
+}
+
+#calendar-container {
+    font-family: var(--font-ubuntu);
+    margin-top: 50px; /* Altura suficiente para não cobrir o header */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.checking {
+    justify-content: start;
+    flex-direction: row;
+}
+.close-btn {
+    font-family: var(--font-Mukta);
+    background-color: #f44336;
+    color: white;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: rgb(223, 12, 12);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-popup {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.close-popupSchedule {
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.close-popupDelivery {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    float: right;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+.contCar {
+    text-align: center;
+    background-color: var(--varBackgroundClassic);
+    border-radius: green 2px;
+}
+
+
+#currentMonth {
+    padding: 5px 10px;
+    background-color: var(--varWhite);
+    color: var(--varGreen);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- D --*/
+
+div {
+    text-align: center; 
+}
+
+.delivery {
+    font-family: var(--font-ubuntu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+
+/*--- E --*/
+#errorMessage {
+    text-align: center;
+}
+
+
+
+
+
+
+/*--- F --*/
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 0px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group {
+    margin-bottom: 2px;
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.form-group input[type="date"] {
+    padding: 6px;
+}
+.form-group input[type="checkbox"] {
+    width: auto;
+}
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--varBlue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- G --*/
+
+
+.gerencia {
+    background-color: var(--varBackgroundForm);
+}
+
+
+
+
+
+
+/*--- H --*/
+
+/*.has-event {
+    background-color: #FFD700; 
+    cursor: pointer;
+}
+*/
+
+.has-event {
+    background-color: var(--varYellow);
+    color: black; /* Cor de fundo para dias com eventos */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.has-event:hover {
+    background-color: #FFA500; /* Cor de fundo ao passar o mouse */
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff00;
+    padding: 1px; 
+    box-sizing: border-box;
+    z-index: 1000;
+    height: 20vh; 
+}
+
+
+#header img.logoHeader {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+#header img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    
+    font-family: var(--font-ubuntu);
+    margin-top: 4px; 
+    padding: 8px;
+    text-align: center;
+}
+h1 {
+    background-color: #FFFFFF;
+    color: #789900;  
+    font-size: 32px;       
+    text-align: center;
+    width: 97%;
+    box-shadow: var(--varBoxshadowForm);
+    border-radius: 10px;
+} 
+
+h2 {
+    background-color: var(--varGreen);
+    border-radius: 10px;
+    box-shadow: var(--varBoxshadowForm);
+    color: var(--varWhite);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 25px;    
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    width: 100%;
+    
+    
+}
+
+html, body {
+    font-family: var(--font-Mukta);
+    margin: 0 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--varGreen);
+    background-image: var(--varBackgroundClassic);
+    background-size: cover; 
+    background-position: center; 
+    overflow-x: hidden; 
+    line-height: 1.0; 
+    padding: 0; /* Espaço para o header fixo */
+    overflow-y: auto; /* Evita barra de rolagem lateral */
+}
+/*html, body {
+    font-family: var(--font-Mukta);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--varWhite);
+    background-image: var(--varBackgroundClassic);
+    background-size: cover; 
+    background-position: center; 
+    overflow-x: hidden; 
+    line-height: 1.0; 
+    padding-top: 50px;
+}*/
+
+
+/*--- I --*/
+
+#img_section {
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 2px;
+    height: auto;
+}
+
+#img_section a {
+    margin: 0 auto;
+}
+
+#img_section img {
+    max-width: 99%;
+    height: auto;
+}
+
+#initial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#initial img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, select, textarea {
+    font-family: var(--font-Mukta);
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/*--- J --*/
+/*--- K --*/
+/*--- L --*/
+
+label{
+    color: var(--varGreen);
+    font-family: var(--font-ubuntu);
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: start;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logoHeader{
+    
+    width: 100%;
+    height: auto;
+}
+
+.logoFooter {
+    max-width: auto;
+    height: auto;
+}
+
+#logo img {
+    max-width: 95%;
+    height: 95%;
+}
+
+#logo-container {
+    border: 2px solid rgb(4, 128, 0); 
+    box-shadow: 0 8px 16px rgba(2, 78, 2, 0.548); 
+    padding: 10px; 
+    display: inline-block; 
+}
+
+.loginForm {
+    background-color: var(--varBackgroundForm);
+    border: 2px solid var(--varGreen); 
+    box-shadow: var(--varBoxshadowForm); 
+    border-radius: 10px;
+    max-width: 360px; 
+    padding: 10px;
+    width: 100%;    
+}
+
+
+.loginForm label {
+    font-weight: bold;
+    font-family: var(--font-ubuntu);
+    font-size: 16px;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="number"],
+.loginForm input[type="date"],
+.loginForm input[type="time"],
+.loginForm input[type="email"],
+.loginForm input[type="password"],
+.loginForm select {
+    border: 1px solid #ccccccf1;
+    border-radius: 4px;
+    margin-top: 10px; 
+    margin-bottom: 2px;
+    padding: 8px;
+    width: 100%;
+}
+
+
+#loginForm button {
+    background-color: var(--varGreen);
+    border: none;    
+    border-radius: 4px;
+    box-shadow: var(--varBoxshadowForm);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;    
+    padding: 10px 20px;    
+    width: 100%;
+}
+
+#loginForm button:hover {
+    background-color: transparent;
+    font-weight: bolder;
+    color: var(--varGreen);
+}
+
+
+/*--- M --*/
+
+
+main {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Ajuste conforme necessário */
+    margin-bottom: 20px;
+}
+
+#map {
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    margin: 20px auto;
+    border: 2px solid var(--varGreen);
+    box-shadow: var(--varBoxshadowForm);
+}
+
+@media (max-width: 600px) {
+    #botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    #botoes button {
+        margin-bottom: 10=0px;
+    }
+    #botoes button:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    #map {
+        height: 300px;
+    }
+    .modal-content {
+        width: 95%;
+        margin-top: 30%;
+    }
+    h1, button {
+        width: 95%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .month-navigation {
+        flex-direction: column;
+    }
+    #prevMonth, #nextMonth, #currentMonth {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+    #calendar {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 18px; /* Maior tamanho de letra para telas maiores */
+    }
+}
+@media(max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+    input, select, textarea {
+        padding: 8px;
+    }
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+#modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+#modal-image {
+    width: 100%;
+}
+
+.month-navigation {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/*--- N --*/
+
+/*--- O --*/
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+    display: none; 
+}
+
+#overlaySchedule {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+#overlaySchedule, #calendarPopupSchedule {
+    display: none;
+}
+
+
+#overlayDelivery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- P --*/
+
+.paragrafo {
+    background-color: #789900;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+/* placeholder */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #999;
+}
+
+/* Para um placeholder específico */
+input[type=text]::placeholder {
+    color: #999;
+}
+
+.popup {
+    display: none;  /* Escondido por padrão */
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 50%;
+    height: 92%;
+    background-color: var(--varBackgroundForm);
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    z-index: 1002;
+}
+
+
+
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #3080e2d3;
+    border: 2px solid #789900a9;
+    box-shadow: 0 0px 10px var(--varBoxshadowForm);
+    display: none;
+    z-index: 1000;
+}
+
+.popup-containerSchedule {
+    background-color: var(--varBackgroundForm);
+    box-shadow: var(--varBoxshadowForm);
+    border-color: #789900b4;
+    display: block;
+    gap: 10px;
+    left: 50%;
+    max-width: 90%;
+    margin: 2px;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    z-index: 1000;    /* Ajuste para altura máxima de 90% da viewport */
+    max-height: 80vh; /* Altura máxima de 90% da altura da viewport */   
+}
+/*
+.popup-containerSchedule::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem 
+}
+
+.popup-containerSchedule::-webkit-scrollbar-track {
+    background: var(--varBackgroundForm); /* Cor de fundo da barra de rolagem 
+}
+
+.popup-containerSchedule::-webkit-scrollbar-thumb {
+    background-color: var(--varBackgroundInternal); /* Cor do indicador de rolagem 
+    border-radius: 2px; /* Raio da borda do indicador de rolagem 
+    border: 3px solid var(--varGreenshodow); /* Borda do indicador de rolagem 
+}*/
+
+.popup-containerDelivery {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    border: 2px solid green;
+    box-shadow: 0 0px 10px rgba(0, 128, 0, 0.5);
+    display: none;
+    z-index: 1000;
+    padding: 20px;
+}
+
+#popup-containerTwo {
+    display: none;
+    position: absolute;
+    background: #789900a4;
+    border: 1px solid var(--varGreen);
+    box-shadow: var(--varBoxshadowForm);
+    padding: 10px;
+    z-index: 2000;
+}
+
+.popup-content {
+    background-color: var(--varGreen2);    
+    border-radius: 1px;
+    box-shadow: 0 0 10px var(--varBoxshadowForm);
+    margin: auto;
+    max-width: 100%;
+    max-height: 90%;    
+    overflow-y: auto;       
+    padding: 20px;
+    position: relative;
+    text-align: center; 
+}
+
+.popup-content h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.popup-contentSchedule {
+    margin:4px;
+    text-align: left;
+    position: relative;
+    padding: 5px;
+    border-radius: 5px;    
+    
+}
+
+.popup-contentDelivery {
+    text-align: left;
+    position: relative;
+}
+
+#prevMonth, #nextMonth {
+    padding: 10px 20px;
+    background-color: var(--varGreen);
+    color: #FFFFFF;
+    box-shadow: var(--varBoxshadowForm);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prevMonth:hover, #nextMonth:hover {
+    background-color: var(--varYellow);
+}
+
+/*--- Q --*/
+/*--- R --*/
+
+.registerButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--varGreen);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.registerButton:hover {
+    background-color: transparent;
+    font-weight: bolder;
+    color: var(--varGreen);
+}
+
+.route-form{
+    display: flex; /* Usa flexbox para alinhar os elementos na mesma linha */
+    gap: 1px;
+    background-color: var(--varBackgroundForm);
+    padding: 0px;
+    border: 2px solid var(--varGreen); 
+    box-shadow: var(--varBoxshadowForm); 
+    border-radius: 10px; 
+    width: 90%; 
+    max-width: 900px; 
+}
+.route-form,
+.route-form button{
+    flex: 1; /* Faz os inputs e botão ocuparem o espaço disponível */
+    margin-right: 5px;
+}
+.route-form button {
+    flex: 0 0 auto;
+}
+
+.route-formInput{
+    flex: 1;
+    margin-right: 5px;
+    width: 200px; 
+    height: 40px;
+}
+.route-label {   
+     text-align: center;
+     padding-bottom: 0px;
+     padding-top: 18px;
+}
+
+.routeForm {
+    background-color: var(--varGreen);
+    box-shadow: var(--varBoxshadowForm);
+    color: white;
+    border: none;
+    padding: 0px 0px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 10%;
+}
+
+.routeForm:hover {
+    background-color: var(--varYellow);
+    color: var(--varWhite);
+    font-weight: bolder;
+    
+}
+/*--- S --*/
+
+       
+.schedule {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4af;
+}
+
+#scheduleForm-schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    width: 100%;
+    margin-top: 13px; /* Espaçamento superior */
+    margin-bottom: 0px; /* Espaçamento inferior */
+}
+
+#scheduleFormDelivery {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#scheduleForm-schedule label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#scheduleFormDelivery label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#scheduleForm-schedule input[type="text"],
+#scheduleForm-schedule input[type="date"],
+#scheduleForm-schedule input[type="number"],
+#scheduleForm-schedule select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;  
+}
+
+#scheduleFormDelivery input[type="text"],
+#scheduleFormDelivery input[type="date"],
+#scheduleFormDelivery input[type="number"],
+#scheduleFormDelivery select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;  
+}
+
+#scheduleForm-schedule button {
+    background-color: var(--varGreen);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#scheduleFormDelivery button {
+    background-color: var(--varGreen);
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#scheduleForm-schedule button:hover {
+    background-color: transparent;
+    font-weight: bolder;
+    color: var(--varGreen);
+    font-size: 24px;
+}
+
+#scheduleFormDelivery button:hover {
+    background-color: transparent;
+    font-weight: bolder;
+    color: var(--varGreen);
+}
+
+.select-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+#showCalendar {
+    background-color: var(--varYellow);
+    color: black; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#showCalendarSchedule {
+    background-color: rgba(144, 238, 144, 0);
+    color: var(--varWhite);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+#showCalendarSchedule img {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#showCalendar:hover {
+    background-color: rgb(0, 207, 0); 
+}
+
+#showCalendarSchedule:hover {
+    background-color: rgba(0, 100, 0, 0.021);
+    font-weight: bolder;
+    color: var(--varYellow);
+}
+
+#showCalendarDelivery {
+    background-color: rgba(144, 238, 144, 0.062);
+    color: black;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+#showCalendarDelivery:hover {
+    background-color: darkgreen;
+}
+#showCalendarDelivery img {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}
+
+#showTablePopup {
+    background-color: rgba(144, 238, 144, 0);
+    color: var(--varWhite);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+#showTablePopup img {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
+#showTablePopup:hover {
+    background-color: rgba(0, 100, 0, 0.021);
+    font-weight: bolder;
+    color: var(--varYellow);
+}
+
+#start, #end, #mode {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--- T --*/
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1px;
+}
+.table th, .table td {
+    
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th {
+    
+    background-color: #f2f2f29c;
+    text-align: center;
+}
+
+#tablePopup {
+    background-color: rgba(0, 100, 0, 0.404);
+    color: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 1.3s;
+    margin-bottom: 20px;
+}
+#tablePopup img {
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+}
+
+
+#tablePopup:hover {
+    background-color: rgba(0, 100, 0, 0.822);
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--varBlue);
+}
+th {
+    background-color: #f2f2f2;
+}
+th, td {
+    border: 1px solid #789900;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+tr {
+    background-color: var(--varWhite2);
+    font-size: 20px;
+}
+.today {
+    background-color: rgba(2, 75, 2, 0.555);
+    font-weight: bold;
+    color: var(--varWhite); /* Cor de fundo para o dia atual */
+}
+
+thead {
+    background-color: var(--varWhite);
+    color: var(--varGreen);
+
+}
+
+.tableReport {
+    width: 100%;
+    border-collapse: collapse;
+    border-color: var(--varBlue);
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.041);
+    
+}
+.tableReport th, .tableReport td {
+    border: 1px solid var(--varGreen);
+    padding: 5px;
+    color:black;
+    background-color: rgba(172, 255, 47, 0);
+    text-align: center;
+}
+.tableReport th {
+    background-color: rgba(255, 255, 255, 0.021);
+    color: var(--varGreen);
+    text-align: center;
+}
+
+/*.tableReportDelivery {
+    width: 95%;
+    border-collapse: collapse;
+    border-color: var(--varBlue);
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.041);    
+}*/
+
+.tableReportDelivery {
+    width: 90%;
+    table-layout: fixed;
+}
+
+.tableReportDelivery th, .tableReportDelivery td {
+    padding: 4px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+/*.tableReportDelivery th, .tableReportDelivery td {
+    border: 1px solid var(--varGreen);
+    padding: 10px;
+    color:black;
+    background-color: rgba(172, 255, 47, 0);
+    text-align: center;
+}*/
+
+.tableReportDelivery th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+/*.tableReportDelivery th {
+    background-color: rgba(255, 255, 255, 0.021);
+    color: var(--varGreen);
+    text-align: center;
+}*/
+
+.tableReportDelivery td {
+    white-space: nowrap;
+}
+
+.tableReportDelivery th.acao, .tableReportDelivery td.acao {
+    width: 50px; 
+    text-align: center;
+}
+/*--- U --*/
+
+.unic {
+    
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*--- V --*/
+/*--- X --*/
+/*--- Y --*/
+/*--- W --*/
+/*--- Z --*/
+
+
+
+
+/* Estilos globais para inputs e selects */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    font-family: var(--font-Mukta); /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    border: 1px solid #ccc; /* Borda */
+    border-radius: 4px; /* Raio da borda */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    margin: 5px 0; /* Margem superior e inferior de 5px, margem zero nas laterais */
+    display: block; /* Garante que cada input/select seja exibido em uma linha */
+}
+
+
+

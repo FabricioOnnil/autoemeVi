@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GERENCIAL</title>
+    <link rel="stylesheet" href="/estilos/visual.css">
+    <link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main >
+        <section id="header">
+            <a href="#">
+                <img src="../Imagens/logonew725.png" alt="Logo Vamo">
+            </a>
+        </section><br>
+        <h1>Gerencial</h1><br>
+        <div class="container">
+        <div class="box">
+            <h2>CARRO</h2>
+            <button onclick="openPopup('infoPopup')">Descrição</button>
+            <button onclick="openPopup('carPopup')" >Contrato</button>
+            <button onclick="openPopup('custPopup')">Custo fixo</button>            
+        </div>
+        
+        <div class="box">
+            <h2>USUARIO</h2>
+            <button onclick="openPopup('acessoPopup')">Cadastrar</button>
+            <button onclick="redirecionar('/vamoInformado')">Informações</button>
+        </div>
+
+        <div class="box">
+            <h2>INFORMAÇÕES</h2>
+            <button onclick="openPopup('globalValuesPopup')">Global</button>            
+            <button onclick="redirecionar('/vamoCalendario')">Calendário</button>
+        </div>
+
+        </div>
+        <!-- Popup para Cadastro de Carros -->
+        <div id="carPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup('carPopup')">Fechar</button>
+                <h1 class="paragrafo">Contrato dos Carros</h1>
+                <form action="/contratoCarro" method="POST" >
+                    <div class="form-group">
+                            <label for="dataInicio" class=>Data de Início do Aluguel:</label>
+                            <input type="date" id="dataInicio" name="dataInicio">
+                            <label for="dataTermino">Data de Término do Aluguel:</label>
+                            <input type="date" id="dataTermino" name="dataTermino">
+                            <label for="usuarioResponsavel">Responsável</label>
+                            <input type="text" id="usuarioResponsavel" name="usuarioResponsavel">
+                            <label for="codigoReserva">Codigo Reserva</label>
+                            <input type="text" id="codigoReserva" name="codigoReserva">
+                            <label for="codigoAluguel">Contrato Aluguel</label>
+                            <input type="text" id="codigoAluguel" name="codigoAluguel">
+                            <label for="tarifaContrato">Tarifa Mensal</label>
+                            <input type="number" step="0.01" id="tarifaContrato" name="tarifaContrato">
+                            <label for="kmExcedente">Valor Km Excedente</label>
+                            <input type="number" step="0.01" id="kmExcedente" name="kmExcedente">
+                            <label for="distanciaDia">Franquia km/dia</label>
+                            <input type="number" id="distanciaDia" name="distanciaDia">
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="custPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup('custPopup')">Fechar</button>
+                <h1 class="paragrafo">Custos Fixo</h1>
+                <form action="/custosCarro" method="POST">
+                    <div class="form-group">
+                            <label for="limiteReparos">Valor Limite Reparos</label>
+                            <input type="number" step="0.01" id="limiteReparos" name="limiteReparos">
+                            <label for="danosTerceiros">Danos a Terceiros</label>
+                            <input type="number" step="0.01" id="danosTerceiros" name="danosTerceiros">
+                            <label for="perdaTotal">PT/Furto/Roubo</label>
+                            <input type="number" step="0.01" id="perdaTotal" name="perdaTotal">
+                            <label for="inicioSeguroVigencia">Início Vigência Seguro</label>
+                            <input type="date" id="inicioSeguroVigencia" name="inicioSeguroVigencia">
+                            <label for="fimSeguroVigencia">Fim Vigência Seguro</label>
+                            <input type="date" id="fimSeguroVigencia" name="fimSeguroVigencia">
+                            <label for="aluguelKm">km Aluguel:</label>
+                            <input type="number" id="aluguelKm" name="aluguelKm" required>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div> 
+        </div>
+        <div id="infoPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup('infoPopup')">Fechar</button>
+                <h1 class="paragrafo">Informações dos Carros</h1>
+                <form action="/carro" method="POST">
+                    <div class="form-group">
+                            <label for="nomeCarro">Modelo:</label>
+                            <input type="text" id="nomeCarro" name="nomeCarro" required>
+                            <label for="placa">Placa:</label>
+                            <input type="text" id="placa" name="placa" required>
+                            <label for="anoFabricacao">Ano de Fabricação:</label>
+                            <input type="number" id="anoFabricacao" name="anoFabricacao" required>
+                            <label for="capacidadeTanque">Capacidade do Tanque (litros):</label>
+                            <input type="number" id="capacidadeTanque" name="capacidadeTanque" required>
+                            <label for="mediaConsumo">Média de Consumo de Combustível (km/l):</label>
+                            <input type="number" id="mediaConsumo" name="mediaConsumo" step="0.1" required>
+                            <button type="submit">Cadastrar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Popup para Cadastro de Acesso -->
+        <div id="acessoPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup('acessoPopup')">Fechar</button>
+                <h1 >Cadastro de Acesso</h1>
+                <form action="/acesso" method="POST" id="formDateUser">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="name" required>
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="lastName" required>
+                        <label for="senha">Senha de Login:</label>
+                        <input type="text" id="senha" name="password" required>
+                        <label for="numeroHabilitacao">Número do Documento de Habilitação:</label>
+                        <input type="number" id="numeroHabilitacao" name="licenseDriving" required>
+                        <label for="orgaoExpedidor">Órgão Expedidor:</label>
+                        <input type="text" id="orgaoExpedidor" name="sectorShipping" required>
+                        <label for="validadeHabilitacao">Data da Validade da Carteira de Habilitação:</label>
+                        <input type="date" id="validadeHabilitacao" name="dateExpiration" required>
+                        <button type="submit" class="button_confirm">Cadastrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Popup para Valores Globais -->
+        <div id="globalValuesPopup" class="popup">
+            <div class="popup-content">
+                <button class="close-btn" onclick="closePopup('globalValuesPopup')">Fechar</button>
+                <h1>Valores Globais</h1>
+                <div class="form-group">
+                    <label for="filter">Filtrar por:</label>
+                    <select id="filter" onchange="filterValues()">
+                        <option value="Total">Total</option>
+                        <option value="Ano">Ano</option>
+                        <option value="Mês">Mês</option>
+                        <option value="15 dias">Ultimos 15 dias</option>
+                        <option value="media">Média</option>
+                        <option value="global">Global</option>
+                    </select>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Descrição</th>
+                            <th>km Percorrido</th>
+                            <th>Custo Total Combustível</th>
+                            <th>Total Litros</th>
+                            <th>Total Gasto</th>
+                            <th>Custo de Reparos</th>
+                            <th>Custo de Alimentação</th>
+                            <th>Horas Agendadas</th>
+                            <th>Horas Não Agendadas</th>
+                        </tr>
+                    </thead>
+                    <tbody id="globalValuesTable">
+                        <!-- Os dados serão preenchidos aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </div>   
+    </main>
+    <footer>
+        <a href="https://mvgi.com.br/" target="_blank">
+            <img src="../Imagens/mvtranslucido2.png" alt="Logo MV Gestão Integrada">
+        </a>
+    </footer>
+    <script type="module" src="/script/gerencia.js"></script>
+    <script type="module" src="/script/server.js"></script>   
+</body>
+</html>

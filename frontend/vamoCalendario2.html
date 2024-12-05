@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALENDÁRIO</title>
+    <link rel="stylesheet" href="/estilos/visual.css">
+    <link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="header">
+            <a href="/"><img class="logoHeader" src="/Imagens/logonew725.png" alt="Logo Vamo"></a> </section><br>
+        <h1>Calendario</h1>
+        <br>
+        <div class="box">
+        <div class="month-navigation">
+            <button id="prevMonth">Mês Anterior</button>
+            <span id="currentMonth"></span>
+            <button id="nextMonth">Próximo Mês</button>
+            <a href="/"><button class="backButton">Voltar</button></a>
+        </div>
+        </div>
+        <br>
+        <table id="calendar">
+            <thead>
+                <tr>
+                    <th>Domingo</th>
+                    <th>Segunda-feira</th>
+                    <th>Terça-feira</th>
+                    <th>Quarta-feira</th>
+                    <th>Quinta-feira</th>
+                    <th>Sexta-feira</th>
+                    <th>Sábado</th>
+                </tr>
+            </thead>
+            <tbody id="calendarioBody"></tbody>
+        </table>
+        <div id="popup-containerTwo" class="popup-container" style="display: none;">
+            <div class="popup-content">
+                <span class="close-popup">&times;</span>
+                <h2>Eventos do dia</h2>
+                <div id="eventDetails">Detalhes do evento aparecerão aqui.</div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://mvgi.com.br/" target="_blank">
+                <img src="/Imagens/mvtranslucido2.png" alt="Logo MV Gestão Integrada">
+            </a>
+        </footer>
+    </main>
+    <script src="/script/calendario.js"></script>
+</body>
+</html>

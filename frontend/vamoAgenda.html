@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDA</title>
+    <link rel="stylesheet" href="/estilos/visual.css">
+    <link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon">
+    
+</head>
+<body >
+    <main>
+        <section id="header">
+            <a href="#"><img class="logoHeader" src="/Imagens/logonew725.png" alt="Logo Vamo"></a> </section><br>
+        <br>
+        <h1>Uso do carro</h1><br>
+        <div class="box">
+            <h2></h2>
+        <button id="showCalendarSchedule">AGENDAR</button>
+        <div id="overlaySchedule"></div>
+        <div id="calendarPopupSchedule" class="popup-containerSchedule">
+            <div class="popup-contentSchedule">
+                <span class="close-popupSchedule">Fechar</span>
+                <form id="scheduleForm-schedule" action="/agenda" method="POST">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="startDate">Data Agendada:</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                    <label for="startTime">Hora de retirada: </label>
+                    <input type="time" id="startTime" name="startTime" required>
+                    <label for="deliverEndDate">Data de Entrega:</label>
+                    <input type="date" id="deliverEndDate" name="deliverEndDate">
+                    <label for="originSelect">Escritório de Origem:</label>
+                    <select id="originSelect" name="originSelect" required>
+                        <option value="">-Selecione o Escritório-</option>
+                        <option value="Alegre">  Alegre </option>
+                        <option value="Castelo">  Castelo </option>
+                        <option value="Muniz Freire">  Muniz Freire </option>
+                        <option value="Guaçui">  Guaçuí </option>
+                    </select>
+                    <label for="km_initial">km Inicial:</label>
+                    <input type="number" id="km_initial" name="km_initial" required>
+                    <label for="carSelect">Escolha um carro:</label>
+                    <select id="carSelect" name="carSelect" required>
+                        <option value="">-Selecione um Carro-</option>
+                        <!-- As opções serão preenchidas aqui pelo JavaScript -->
+                    </select>
+                   
+
+                    <button type="submit">Agendar</button>
+                </form>
+            </div>
+        </div><br>
+        <button id="showTablePopup">AGENDAMENTOS</button>
+        </div>
+    <div id="overlayTable"></div>
+    <div id="tablePopup" class="popup-container">
+    <div class="popup-content">
+        <span class="close-popup">Fechar</span>
+        <table id="schedules" class="tableReport" >
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Data Agendada</th>
+                    <th>Hora de Retirada</th>
+                    <th>Data de Entrega</th>
+                    <th>Escritório de Origem</th>
+                    <th>Km inicial</th>
+                    <th>Carro</th>
+                </tr>
+            </thead>            
+            <tbody id="schedulesBody">
+                <!-- Dados serão preenchidos dinamicamente aqui -->
+            </tbody>
+        </table>
+    </div>   
+</div>
+<a href="/frontend/vamoDashboard.html"><button class="backButton">Voltar</button></a><br>
+
+        <footer>
+            <a href="https://mvgi.com.br/" target="_blank">
+                <img src="/Imagens/mvtranslucido2.png" alt="Logo MV Gestão Integrada">
+            </a>
+        </footer>
+    </main>
+    <script src="/script/popup.js"></script>
+    <script src="/script/agenda.js"></script>
+</body>
+</html>

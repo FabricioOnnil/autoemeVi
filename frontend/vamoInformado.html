@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELATÓRIO</title>
+    <link rel="stylesheet" href="/estilos/visual.css">
+    <link rel="shortcut icon" href="/Imagens/favicon_vamo.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section id="header">
+            <a href="#"><img src="../Imagens/logonew725.png" alt="Logo Vamo"></a>
+        </section><br>
+        
+        <h1>Consultor analizado</h1><br>
+        
+
+        <div class="box">
+            <h2></h2>
+        <section id="botoes-relatorios">
+            <button onclick="abrirPopup('distanciaPopup')">Distância</button>
+            <button onclick="abrirPopup('agendamentosPopup')">Agendamentos</button>
+            <button onclick="abrirPopup('diarioPopup')">Diário</button>
+            <button onclick="abrirPopup('custosPopup')">Custos de Rota</button>
+        </section><br>
+        </div>
+        <a href="/frontend/vamoGerencia.html"><button class="backButton">Voltar</button></a><br>
+        <!-- Popups -->
+        <div id="distanciaPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="fecharPopup('distanciaPopup')">&times;</span>
+                <h1>Distância</h1>
+                <!-- Conteúdo específico da distância -->
+                <p>Informações de distância...</p>
+            </div>
+        </div>
+
+        <div id="agendamentosPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="fecharPopup('agendamentosPopup')">&times;</span>
+                <h1>Agendamentos</h1>
+                <!-- Conteúdo específico de agendamentos -->
+                <p>Informações de agendamentos...</p>
+            </div>
+        </div>
+
+        <div id="diarioPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="fecharPopup('diarioPopup')">&times;</span>
+                <h1>Diário</h1>
+                <div id="check" class="checking">
+                    <input type="checkbox" name="prioriUm" id="prioriUm"> Crucial
+                    <input type="checkbox" name="prioriDois" id="prioriDois"> Importante
+                    <input type="checkbox" name="prioriTres" id="prioriTres"> Observar
+                    <input type="checkbox" name="prioriQuatro" id="prioriQuatro"> Casual
+                </div>
+                <div id="textForm">
+                    <form id="longTextForm">
+                        <label for="longText">Descrição:</label><br>
+                        <textarea id="longText" name="longText" rows="10" cols="50" maxlength="400" required></textarea><br><br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <p id="message"></p>
+            </div>
+        </div>
+
+        <div id="custosPopup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="fecharPopup('custosPopup')">&times;</span>
+                <h1>Custos de Rota</h1>
+                <!-- Conteúdo específico de custos de rota -->
+                <p>Informações de custos de rota...</p>
+            </div>
+        </div>
+
+        <footer>
+            <a href="https://mvgi.com.br/" target="_blank">
+                <img src="/Imagens/mvtranslucido2.png" alt="Logo MV Gestão Integrada">
+            </a>
+        </footer>
+    </main>
+
+    <script src="/script/info.js"></script>
+</body>
+</html>

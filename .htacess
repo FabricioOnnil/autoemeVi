@@ -1,0 +1,12 @@
+# Permitir métodos GET e POST
+<Limit GET POST>
+    Allow from all
+</Limit>
+
+# Bloquear todos os outros métodos
+<LimitExcept GET POST>
+    Deny from all
+</LimitExcept>
+
+# Configurações adicionais (opcional)
+Options -Indexes
