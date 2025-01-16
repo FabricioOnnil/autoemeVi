@@ -41,44 +41,56 @@ const agenda = db.sequelize.define('agenda', {
   },
 
   //Descrição da Rota. 7
+  s_agenda_officeStart: {
+    type: DataTypes.STRING,
+    allowNull: true
+  },
+
+  //Descrição da Rota. 8
   s_agenda_officeEnd: {
     type: DataTypes.STRING,
     allowNull: true
   },
 
-  // Quilometragem inicial do carro. 8
+  // Quilometragem inicial do carro. 9
   i_agenda_kmInitial: {
     type: DataTypes.INTEGER,
     allowNull: true
   },
 
-  //Carro Selecionado. 9
+  //Carro Selecionado. 10
   s_agenda_scheduleCar: {
     type: DataTypes.STRING,
     allowNull: true
   },
 
-  //Data da criação da linha. 10
+  //Inicio da Rota. 11
+  i_agenda_startRote: {
+    type: DataTypes.INTEGER,
+    allowNull: true
+  },
+
+  //Data da criação da linha. 12
   d_agenda_createdAt: {
     type: DataTypes.DATE,
     allowNull: true,
     defaultValue: DataTypes.NOW,
   },
 
-  //Data da atualização da linha. 11
+  //Data da atualização da linha. 13
   d_agenda_updateAt: {
     type: DataTypes.DATE,
     allowNull: true,
     defaultValue: DataTypes.NOW,
   },
-  // conexão externa com a tabela usuario. 12
+  // conexão externa com a tabela usuario. 14
   i_agenda_usuario_user: {
     type: DataTypes.INTEGER,
     allowNull: true,
     
   },
   
-  // conexão externa com a tabela agendamento. 14
+  // conexão externa com a tabela agendamento. 15
   i_agenda_agendado_id: {
     type: DataTypes.INTEGER,
     allowNull: true,
