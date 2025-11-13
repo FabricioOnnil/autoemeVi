@@ -12,22 +12,23 @@ function initMap() {
     directionsRenderer = new google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
 
-    getUserLocation(); // Obter localização do usuário e marcar no mapa
+    getUserLocation(); // Para obter localização do usuário e marcar no mapa
 
-    // Adicionar listener para clique no mapa que permite a seleção do destino clicando no mapa
+    
     map.addListener('click', function(event) {
         placeMarker(event.latLng);
-    });
+    }); // Adicionar listener para clique no mapa que permite a seleção do destino clicando no mapa
 
     document.getElementById("routeForm").addEventListener("submit", calculateRoute);
 }
 
 
+// Código para manipulação do modal e cálculo de rota
 document.addEventListener('DOMContentLoaded', function() {
     initMap();
-    const calculateRouteBtn = document.getElementById("calculateRouteBtn");
+    const calculateRouteBtn = document.getElementById("calculateRouteBtn"); 
 
-    // Código para manipulação do modal e cálculo de rota
+    
     const openModalBtn = document.getElementById("openModalBtn");
     const modal = document.getElementById("myModal");
     const closeModal = document.getElementsByClassName("close")[0];

@@ -39,7 +39,9 @@ import relatorioRouter from '../routes/relatorioRoutes.js';
 import abastecimentoRouter from '../routes/abastecimentoRoutes.js';
 
 const app = express();
-const PORT = 3000;
+const PORT = 3004;
+
+
 
 
 app.use(cors());
@@ -563,7 +565,6 @@ app.get('/vamoRelatorio', (req, res) => {
 app.get('/vamoReparos', (req, res) => {
   res.sendFile(join(__dirname, '..', 'frontend', 'vamoReparos.html'));
 });
-
 
 
 
