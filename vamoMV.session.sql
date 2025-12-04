@@ -2,6 +2,7 @@ use vamomv;
 
 show tables;
 
+
 select * from carro;
 
 select * from agenda;
